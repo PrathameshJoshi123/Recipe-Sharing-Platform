@@ -1,0 +1,119 @@
+.recipe-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recipe-details img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .recipe-details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-details p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  /* Ingredients */
+  .ingredients {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .ingredients li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .ingredients li:before {
+    content: "✔";
+    margin-right: 10px;
+    color: #ccc;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .rating input[type="radio"] {
+    display: none;
+  }
+  
+  .rating label {
+    font-size: 16px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .rating label:after {
+    content: "\f005"; 
+    font-family: FontAwesome;
+    color: #ccc;
+    transition: color 0.2s ease-in-out;
+    margin-right: 2px;
+  }
+  
+  .rating input[type="radio"]:checked + label:after {
+    color: #f00; 
+  }
+  
+  /* Comments */
+  .comments {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .comments ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .comments ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .comments form {
+    margin-top: 15px;
+  }
+  
+  .comments form textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    margin-bottom: 10px;
+  }
+  
+  .comments form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .comments form button:hover {
+    background-color: #222;
+  }
+  

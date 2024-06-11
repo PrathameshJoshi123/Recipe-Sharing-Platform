@@ -1,0 +1,70 @@
+
+.recipe-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  gap: 20px; 
+}
+
+/* Individual recipe card */
+.recipe-card {
+  width: calc(25% - 20px); 
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  padding: 20px;
+  position: relative; 
+  text-decoration: none;
+}
+
+.recipe-card a { 
+  text-decoration: none;
+}
+
+.recipe-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Recipe title */
+.recipe-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  position: relative;
+  text-decoration: none;
+}
+
+
+.recipe-card::after {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); 
+  opacity: 0; 
+  transition: opacity 0.2s ease-in-out; 
+  text-decoration: none;
+}
+
+.recipe-card:hover .recipe-card::after {
+  opacity: 0.5; /* Visible on hover */
+}
+
+/* Recipe description */
+.recipe-description {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+/* "Created by" information */
+.created-by {
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
+  text-decoration: none;
+}
